@@ -44,7 +44,7 @@
 
         embedded_svc.settings.directToButtonRouting = function(prechatFormData){
             if(segment == 'Trails'){
-                 return "5730n0000004DEE"
+                 return "5730n0000004DEY"
              }
         }
 		
@@ -52,8 +52,7 @@
         var chatDeploymentId = '';
         
        	 if(segment == 'Trails'){
-		console.log('In Trails');
-             chatButtonId = '5730n0000004DEE';
+             chatButtonId = '5730n0000004DEY';
              chatDeploymentId = '5720n0000004D3q';
          }
          //End Custom Code
@@ -66,13 +65,13 @@
 			'https://cxddev-thomsonreuterss2elatam.cs67.force.com',
 			gslbBaseURL,
 			'00D0n0000009OWW',
-			'DCP_Snapin_NSE',
+			'DCP_New_Sales',
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-ord.salesforceliveagent.com/content',
-				deploymentId: '5720n0000004D3q',
-				buttonId: '5730n0000004DEE',
+				deploymentId: '5720n0000004D40',
+				buttonId: '5730n0000004DEY',
 				baseLiveAgentURL: 'https://d.la1-c1cs-ord.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0n0000004CJ8EAM_17b71e1f270',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0n0000004CJIEA2_17b748f1ef2',
 				isOfflineSupportEnabled: false
 			}
 		);
