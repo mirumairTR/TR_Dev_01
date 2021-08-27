@@ -43,8 +43,9 @@
         ];
 
         embedded_svc.settings.directToButtonRouting = function(prechatFormData){
-            if(segment == 'Trails'){
-                 return "5730n0000004DEY"
+            if(segment == 'Trials'){
+            	console.log('Trials1');
+                 return "5730n0000004DEJ"
              }
         }
 		
@@ -52,8 +53,9 @@
         var chatDeploymentId = '';
         
        	 if(segment == 'Trails'){
-             chatButtonId = '5730n0000004DEY';
-             chatDeploymentId = '5720n0000004D3q';
+       	 	console.log('Trials2');
+             chatButtonId = '5730n0000004DEJ';
+             chatDeploymentId = '5720n0000004D40';
          }
          //End Custom Code
 
@@ -69,7 +71,7 @@
 			{
 				baseLiveAgentContentURL: 'https://c.la1-c1cs-ord.salesforceliveagent.com/content',
 				deploymentId: '5720n0000004D40',
-				buttonId: '5730n0000004DEY',
+				buttonId: '5730n0000004DEJ',
 				baseLiveAgentURL: 'https://d.la1-c1cs-ord.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0n0000004CJIEA2_17b748f1ef2',
 				isOfflineSupportEnabled: false
