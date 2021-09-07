@@ -1,0 +1,39 @@
+<html>
+<head>
+  <script type="text/javascript">
+    let data = {
+                "trialData":
+                  {
+                      "customerSegment": "Law Firm",
+                      "customerSegmentValue": "Law-1-6",
+                      "productOffering": "Westlaw Edge",
+                      "isPrimaryCheck": true,
+                      "trialSource": "Digital",
+                      "trialContacts":
+                      [
+                          {
+                              "customerEmail": "test11_tooshort@mailinator.com",
+                              "forValidation": true,
+                              "primaryUser": true
+                          }
+                      ]
+                  }
+               };
+
+
+    const userAction = async () => {
+        const response = await fetch('https://api-uat.thomsonreuters.com/ue/trials/v1/uat/ODTDGValidateTrialCustomer?apiKey=bj8XL3rvwYZc9O60XODVGNm8j1M7N76u', {
+        method: 'POST',
+        body: JSON.stringify(data), 
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      const res = await response.json(); //extract JSON from the http response
+      console.log(res);
+    }
+  </script>
+</head>
+<body></body>
+</html>
+
